@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <style>
+        .center {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            height: 100vh;
+
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+
+        }
+
+        .btn {
+            color: white;
+            background-color: #336ea2;
+            margin-top: 1.25rem;
+            border-radius: 2px;
+            letter-spacing: 0.5px;
+            text-decoration: none;
+            margin: 0;
+        }
+
+        body {
+            margin: 0px !important;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.4rem;
+            font-size: 1rem;
+            border-radius: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+
+        <div>
+            <img src="./logo.jpg" alt="logo">
+            <h1>Sign in to your account</h1>
+            <p>Or</p>
+            <a href="#" target="_blank">start your 14-day free trial</a>
+        </div>
+
+        <div class="contact-form">
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Name"><br>
+                    <input type="password" class="form-control" name="password" id="password"
+                        placeholder="Password"><br>
+                </div>
+                <div class="check-box">
+                    <input type="checkbox" name="Remember Me" checked>Remember Me
+                    <a href="#" target="_blank">Forgot your password?</a><br>
+                </div>
+
+
+                <div class="Sign-in">
+                    <a href="#" class="btn">Sign in</a>
+                </div>
+
+
+
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

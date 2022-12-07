@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Pseuod Element</title>
+
+    <style>
+        .para1 {
+            font-size: 1.5em;
+            letter-spacing: 2px;
+            line-height: 1.5em;
+        }
+
+        .para1::first-line {
+            color: red;
+        }
+
+        .para1::first-letter {
+            color: blue;
+            font-size: 50px;
+        }
+
+        .para1::after {
+            content: url("./images.png")
+            }
+
+            .para1::before {
+                content: "Paragraf Öncesi";
+            }
+    </style>
+</head>
+
+<body>
+
+
+    <p class="para1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis placeat quasi atque accusantium!
+        Consequatur temporibus exercitationem velit asperiores quasi dignissimos dolore amet eos possimus sequi veniam
+        doloremque delectus vero, culpa voluptatibus id, debitis officiis doloribus incidunt repellat quidem est.
+        Praesentium fuga eius dolorem, porro, ipsa repellat quasi voluptatem totam ratione maiores numquam ducimus
+        provident. Illo eius eaque ipsum ipsam, iusto aliquid debitis consequuntur numquam vero, iste molestiae?
+        Explicabo nihil expedita rem sequi, dolores mollitia. Eveniet illo quae quibusdam aliquam nulla sunt animi,
+        atque consequatur deserunt labore ratione impedit, quasi corrupti placeat nostrum, asperiores earum officia sint
+        pariatur amet. Maxime, dolore.</p>
+</body>
+
+</html>

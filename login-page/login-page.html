@@ -6,8 +6,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-
     <style>
+        /* Text */
+
+.text-center {
+    text-align: center;
+}
+
+.heading-small {
+    font-size: 1.25rem;
+}
+
+.heading-medium {
+    font-size: 1.5rem;
+}
+
+.heading-big {
+    font-size: 1.75rem;
+}
+
+/* Colors */
+
+.bg-dark-blue {
+    background-color: #062e51;
+}
+
+.bg-light-blue {
+    background-color: #336ea2;
+}
+
+/* Buttons */
+
+.btn {
+    margin-top: 1.25rem;
+    padding: 0.8rem 3rem;
+    border-radius: 7px;
+    letter-spacing: 0.5px
+}
+
+.btn-primary {
+    background-color: #336ea2;
+}
+
+.btn-primary:hover {
+
+    background-color: white;
+    color: #336ea2;
+    border: 0.5px solid #336ea2;
+}
+
+.btn-dark {
+    background-color: #333;
+}
+
+.btn-dark:hover {
+    color: #333;
+    background-color: #fff;
+    border: 0.5px solid #333;
+}
+
+.btn-block {
+    width: 100%;
+    text-align: center;
+}
+
+/* Forms */
+
+.form-group {
+    padding: 0.25rem 0;
+}
+.form-group label {
+    display: block;
+}
+.form-control {
+    width: 100%;
+    padding: 0.4rem;
+    font-size: 1rem;
+    resize: none;
+    border-radius: 5px;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
         .center {
             display: flex;
             flex-direction: column;
@@ -16,6 +99,10 @@
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             height: 100vh;
 
+        }
+
+        .flex {
+            display: flex;
         }
 
 
@@ -78,7 +165,7 @@
             padding-top: 1rem;
             display: flex;
             align-items: center;
-            justify-content: space-between !important;          
+            justify-content: space-between !important;
 
 
         }
@@ -89,11 +176,12 @@
             align-items: center;
             display: flex;
         }
-        
-        .remember{
+
+        .remember {
             display: flex;
         }
     </style>
+
 </head>
 
 <body>
@@ -124,7 +212,8 @@
                         <p>Remember Me</p>
 
                     </div>
-                    <a href="#" target="_blank" style="color: blueviolet; text-decoration: none; justify-content: space-between;" ;>Forgot
+                    <a href="#" target="_blank"
+                        style="color: blueviolet; text-decoration: none; justify-content: space-between;" ;>Forgot
                         your
                         password?</a>
                 </div>

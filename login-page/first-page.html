@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Wide Header</title>
+
+    <style>
+        .bg-dark-blue {
+            font-family: sans-serif;
+
+        }
+
+        .heading-small {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.25rem;
+            background-color: rgb(49, 47, 47);
+            font-size: 44px;
+            color: white;
+            margin: 0;
+        }
+
+        .home {
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem;
+            list-style-type: none;
+            background-color: black;
+            margin: 0;
+
+        }
+
+        .li-li {
+            background-color: rgb(186, 174, 174);
+            padding: 10px 73px;
+            max-height: 52px;
+            flex-direction: row;
+        }
+
+        .heading {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: baseline;
+            margin: 0;
+            height: 100%;
+
+        }
+
+        .heading-2 {
+            width: 100%;
+            background-color: blanchedalmond;
+            padding: 0.75rem;
+            height: 100%;
+        }
+
+        .aside {
+            margin: 0;
+            padding: 0.75rem;
+            height: 100%;
+        }
+
+        .text-decoration {
+            text-decoration: none;
+            color: black;
+        }
+
+        .mysite {
+            background-color: blanchedalmond;
+            height: 40px;
+            align-items: center;
+            display: flex;
+
+        }
+    </style>
+
+</head>
+
+<body style="
+    height:100vh;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    flex-direction: column;">
+
+    <header class="bg-dark-blue">
+
+        <div class="container">
+            <nav id="navbar">
+
+                <h1 class="heading-small">Site Wide Header</h1>
+
+                <ul class="home">
+                    <li class="li-li"><a class="text-decoration" href="home">Home</a></li>
+                    <li class="li-li"><a class="text-decoration" href="#about">About</a></li>
+                    <li class="li-li"><a class="text-decoration" href="#blog">Blog</a></li>
+                    <li class="li-li"><a class="text-decoration" href="#careers">Careers</a></li>
+                    <li class="li-li"><a class="text-decoration" href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main style="height:100%">
+        <div class="heading">
+            <div class="heading-2">
+                <h2 style="background">This is the heading of the article</h2>
+                <p style="background-color:blanchedalmond; margin:0px;">Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Blanditiis, in dolores. Aut perspiciatis
+                    temporibus magni eos harum non tempore deserunt, sed maxime sunt molestiae quibusdam modi,
+                    ratione
+                    vitae
+                    voluptatem voluptatum corrupti ipsa! Vitae itaque doloremque voluptate perferendis pariatur
+                    aliquid
+                    amet
+                    illo, quos maxime iusto assumenda eius minus ipsam. At autem ad provident eos nulla
+                    necessitatibus
+                    vero
+                    aspernatur, maxime consequatur enim fugiat. Earum nostrum dolore corrupti quisquam! Sit illum
+                    officia
+                    natus dicta culpa hic pariatur nisi veniam beatae iste quos neque adipisci, nihil ipsa ad ea
+                    earum
+                    ducimus dolores asperiores! Porro explicabo doloremque deserunt vero suscipit nam esse nulla
+                    quasi
+                    perspiciatis?</p>
+            </div>
+            <aside class="aside">
+                <h3>Aside Heading</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, nihil!</p>
+            </aside>
+    </main>
+
+
+
+    <footer>
+        </div>
+        <hr style="background-color:black; height:6px; margin:0">
+        <div class="mysite">
+            <p style="margin:0;"> Copyright © 2017 <a href="MySite">My Site</a> </p>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

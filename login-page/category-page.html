@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        .top-bar {
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            padding: 0.25rem 1.5rem;
+            border-top-left-radius: 0.75rem;
+            border-top-right-radius: 0.75rem;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem;
+        }
+
+        .middle {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .end {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .start {
+            padding-left: 0.75rem;
+        }
+
+        .arrivals {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 0.5rem;
+        }
+
+        .main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem;
+            font-size: 13px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: white;
+            padding: 1rem;
+
+        }
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid black;
+            border-radius: 1rem;
+            padding: 33%;
+            font-size: 30px;
+            text-align: center;
+            max-width: 100px;
+            margin: 1px;
+            height:200px;
+            width: 80px;
+            
+
+        }
+        
+        .screen{
+            max-width:1000px;
+            padding: 30px 30px 200px 200px;
+        }
+    </style>
+</head>
+
+<body class="screen">
+    <header class="top-bar">
+        <div>CAD</div>
+        <div>Sign in &nbsp; &nbsp; Create an account</div>
+    </header>
+    <navbar class="navbar">
+        <ul class="start">
+            Logo
+        </ul>
+        <ul class="middle">
+            <div style="padding: 0.25rem">Women</div>
+            <div style="padding: 0.25rem">Men</div>
+            <div style="padding: 0.25rem">Company</div>
+            <div style="padding: 0.25rem">Stores</div>
+        </ul>
+        <ul class="end">
+            <div style="padding: 0.25rem">Search</div>
+            <div style="padding: 0.25rem">Help</div>
+        </ul>
+    </navbar>
+    <section class="arrivals">
+        <h1 style="font-size:24px; margin-bottom: 0;">New Arrivals</h1>
+        <h3 style="font-size:14px; color:gray; padding:">Thoughtfully designed objects for the workspace, home, and
+            travel.</h3>
+        <div class="main">
+            <div class="start">Sort</div>
+            <div class="end">
+                <div style="padding: 0.25rem">Category</div>
+                <div style="padding: 0.25rem">Brand</div>
+                <div style="padding: 0.25rem">Color</div>
+                <div style="padding: 0.25rem">Sizes</div>
+
+            </div>
+        </div>
+    </section>
+    <main>
+        <div class="grid-container">
+            <div class="grid-item"><img src="http://placehold.it/"></div>
+            <div class="grid-item"><img src="http://placehold.it/"></div>
+            <div class="grid-item"><img src="http://placehold.it/"></div>
+            <div class="grid-item"><img src="http://placehold.it/"></div>
+            <div class="grid-item"><img src="http://placehold.it/"></div>
+            <div class="grid-item"><img src="http://placehold.it/"></div>
+            <div class="grid-item"><img src="http://placehold.it/"></div>
+            <div class="grid-item"><img src="http://placehold.it/"></div>
+            <div class="grid-item"><img src="http://placehold.it/"></div>
+            <div class="grid-item"><img src="http://placehold.it/"></div>
+            <div class="grid-item"><img src="http://placehold.it/"></div>
+            <div class="grid-item"><img src="http://placehold.it/"></div>
+            <div class="grid-item"><img src="http://placehold.it/"></div>
+            <div class="grid-item"><img src="http://placehold.it/"></div>
+            <div class="grid-item"><img src="http://placehold.it/"></div>
+            
+        </div>
+    </main>
+
+
+</body>
+
+</html>

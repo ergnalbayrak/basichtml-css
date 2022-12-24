@@ -8,13 +8,24 @@
     <title>Document</title>
 
     <style>
+        :root {
+            --red: #ff0000;
+        }
+
         .flex {
             display: flex;
+            flex-direction: column;
+            padding: 2rem;
+            justify-content: space-between;
+            padding-top: 0;
+            margin-top: 0;
+
         }
 
         .flex-between {
             display: flex;
             justify-content: space-between;
+            margin-bottom: 1px;
         }
 
         .padding {
@@ -119,6 +130,7 @@
             border-right: 1px solid #e9eaed;
             border-bottom: 1px solid #e9eaed;
             flex-wrap: wrap;
+            padding-bottom: 9rem;
         }
 
         .grid-item {
@@ -135,7 +147,8 @@
             padding: 7rem;
             display: flex;
             flex-direction: column;
-            width: 100%;
+            width: 97%;
+            padding-bottom: 2.6rem;
         }
 
         .screen {
@@ -165,6 +178,75 @@
 
         .padding2 {
             padding-top: 4rem;
+
+        }
+
+        .footer {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 10rem;
+
+            width: 40px;
+            height: 40px;
+
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding-bottom: 3rem;
+            border-left: 1px solid rgb(233, 234, 237, .2);
+            border-right: 1px solid rgb(233, 234, 237, .2);
+            margin: 0;
+            padding-top: 0;
+            margin-top: 2rem;
+            width: 77%;
+            font-size: 14px;
+            color: #4c5561;
+
+
+        }
+
+        .form {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+            height: 34px;
+
+        }
+
+        .aside {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: baseline;
+            margin: 0;
+            height: 100%;
+        }
+
+        .a {
+            padding-top: 1rem;
+            text-decoration: none;
+            color: #6d7379;
+        }
+
+        h4 {
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            margin-top: 0;
+        }
+
+        .flex-between>p {
+            margin-bottom: 1rem;
         }
     </style>
 </head>
@@ -177,6 +259,7 @@
                 <div style="padding-right: 1.15rem;">Sign in &nbsp;&nbsp;&nbsp; Create an account</div>
             </div>
         </header>
+
         <navbar class="navbar">
             <ul class="start">
                 <img width="50px" height="50px" src="./image/Ekran görüntüsü 2022-12-22 211321.png" />
@@ -198,6 +281,7 @@
                 <p style="padding-right:2rem">0</p>
             </ul>
         </navbar>
+        
         <section class="arrivals">
             <h1 style="font-size: 30px; margin-bottom: 0">New Arrivals</h1>
             <h3 style="font-size: 17px;
@@ -291,7 +375,7 @@
 
                 </div>
 
-                <div class="grid-item padding2">
+                <div class="grid-item">
                     <img width="350px" height="500px" src="image/Ekran görüntüsü 2022-12-22 211125.png" />
                     <div class="flex-between">
                         <p>Electric Kettle</p>
@@ -302,7 +386,7 @@
                     </div>
                 </div>
 
-                <div class="grid-item padding2">
+                <div class="grid-item">
                     <img width="350px" height="500px" src="image/Ekran görüntüsü 2022-12-22 211158.png" />
                     <div class="flex-between">
                         <p>Leather Workspace Pad</p>
@@ -313,7 +397,7 @@
                     </div>
                 </div>
 
-                <div class="grid-item padding2">
+                <div class="grid-item">
                     <img width="350px" height="500px" src="image/Ekran görüntüsü 2022-12-22 211215.png" />
                     <div class="flex-between">
                         <p>Leather Long Wallet</p>
@@ -361,6 +445,60 @@
 
             </div>
         </main>
+
+        <footer>
+            <div>
+                <img src="./image/Ekran görüntüsü 2022-12-22 211321.png" />
+            </div>
+            <div class="flex">
+                <h4>Products</h4>
+                <a class="a" href="http://">Bags</a>
+                <a class="a" href="http://">Tees</a>
+                <a class="a" href="http://">Objects</a>
+                <a class="a" href="http://">Home Goods</a>
+                <a class="a" href="http://">Accessories</a>
+            </div>
+            <div class="flex">
+                <h4>Company</h4>
+                <a class="a" href="http://">Who we are</a>
+                <a class="a" href="http://">Sustainability</a>
+                <a class="a" href="http://">Press</a>
+                <a class="a" href="http://">Carriers</a>
+                <a class="a" href="http://">Terms & Conditions</a>
+                <a class="a" href="http://">Privacy</a>
+            </div>
+            <div class="flex">
+                <h4>Customer Service</h4>
+                <a class="a" href="http://">Contact</a>
+                <a class="a" href="http://">Shipping</a>
+                <a class="a" href="http://">Returns</a>
+                <a class="a" href="http://">Warranty</a>
+                <a class="a" href="http://">Secure Payments</a>
+                <a class="a" href="http://">FAQ</a>
+                <a class="a" href="http://">Find a store</a>
+            </div>
+            <aside class="aside">
+                <div>
+                    <h4>Sign up for our newsletter</h4>
+                    <p style="color:#6d7379">The latest deals and savings, sent to your inbox weekly.</p>
+                    <div class="form">
+                        <input type="text" name="name"
+                            style="border-radius: 10px; border: 1px solid #d6d7dc; width: 70%; height: 34px;">
+                        <button type="button"
+                            style="border-radius:10px; border: 1px solid #d6d7dc; height:40px; width: 25%; color: white; background-color: #5046e5;">Sign
+                            up</button>
+                    </div>
+
+                </div>
+
+            </aside>
+        </footer>
+
+
+        <div>
+            <p style="color:#6d7379; font-size:15px;">© 2021 Workflow, Inc. All right reserved.</p>
+        </div>
+
     </div>
 </body>
 
